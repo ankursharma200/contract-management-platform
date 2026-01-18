@@ -2,6 +2,8 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import CreateContract from './pages/CreateContract';
+import ContractDetails from './pages/ContractDetails';
+import Blueprints from './pages/Blueprints';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Route path="/create" element={<div className="text-gray-500">Create Contract (Coming Soon)</div>} />
         <Route path="/contracts/:id" element={<div className="text-gray-500">Contract Details (Coming Soon)</div>} />
         <Route path="/create" element={<CreateContract />} />
+        <Route path="/contracts/:id" element={<ContractDetails />} />
+        <Route path="/blueprints" element={<Blueprints />} />
       </Routes>
     </Layout>
   );
