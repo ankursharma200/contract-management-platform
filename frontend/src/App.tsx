@@ -1,21 +1,18 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
+import Blueprints from './pages/Blueprints';
 import CreateContract from './pages/CreateContract';
 import ContractDetails from './pages/ContractDetails';
-import Blueprints from './pages/Blueprints';
 
 function App() {
   return (
     <Layout>
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/blueprints" element={<div className="text-gray-500">Blueprint Management (Coming Soon)</div>} />
-        <Route path="/create" element={<div className="text-gray-500">Create Contract (Coming Soon)</div>} />
-        <Route path="/contracts/:id" element={<div className="text-gray-500">Contract Details (Coming Soon)</div>} />
+        <Route path="/blueprints" element={<Blueprints />} />
         <Route path="/create" element={<CreateContract />} />
         <Route path="/contracts/:id" element={<ContractDetails />} />
-        <Route path="/blueprints" element={<Blueprints />} />
       </Routes>
     </Layout>
   );
