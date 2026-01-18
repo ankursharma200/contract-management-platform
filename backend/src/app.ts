@@ -1,5 +1,7 @@
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
+import blueprintRoutes from './routes/blueprintRoutes';
+import contractRoutes from './routes/contractRoutes';
 
 const app: Application = express();
 
@@ -7,7 +9,11 @@ const app: Application = express();
 app.use(cors());
 app.use(express.json());
 
-// Test Route
+// Routes
+app.use('/api/blueprints', blueprintRoutes);
+app.use('/api/contracts', contractRoutes);
+
+// Health Check
 app.get('/', (req: Request, res: Response) => {
   res.send('Contract Management API is running...');
 });
