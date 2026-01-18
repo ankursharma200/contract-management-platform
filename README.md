@@ -51,4 +51,19 @@ Prerequisites:
 
    ## 📂 Project Structure
 
-   
+
+```bash
+contract-management-platform/
+├── backend/
+│   ├── src/
+│   │   ├── controllers/   # Logic for API endpoints
+│   │   ├── models/        # Mongoose Schemas (Blueprint, Contract)
+│   │   ├── routes/        # API Route definitions
+│   │   └── server.ts      # Entry point
+├── frontend/
+│   ├── src/
+│   │   ├── components/    # Reusable UI components
+│   │   ├── pages/         # Dashboard, Create Contract, Details
+│   │   ├── services/      # Axios API calls
+│   │   └── App.tsx        # Routing
+└── README.md
