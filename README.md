@@ -13,7 +13,7 @@ A full-stack Contract Management Platform built with the MERN stack (MongoDB, Ex
 
 The application follows a **Monorepo** structure with a clear separation of concerns:
 
-```mermaid
+
 graph TD
     User[User / Client] -->|HTTPS| Frontend[Frontend (React + Vite)]
     Frontend -->|REST API| Backend[Backend (Node.js + Express)]
@@ -28,4 +28,4 @@ Prerequisites:
  -> MongoDB (Local or Atlas URI)
 
   # 1. Backend Setup
-  
+
