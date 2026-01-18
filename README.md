@@ -30,37 +30,25 @@ Prerequisites:
   # 1. Backend Setup
 
   cd backend
+
   npm install
-# Create a .env file with: MONGO_URI=your_mongodb_connection_string
+
+  Create a .env file with: MONGO_URI=your_mongodb_connection_string
+
   npm run dev
+
   The server will start on port 5000.
 
   # 2. Frontend Setup
    
    cd frontend
+
    npm install
+
    npm run dev
 
    The application will start on port 5173.
 
    ## 📂 Project Structure
 
-   contract-management-platform/
-├── backend/
-│   ├── src/
-│   │   ├── controllers/   # Logic for API endpoints
-│   │   ├── models/        # Mongoose Schemas (Blueprint, Contract)
-│   │   ├── routes/        # API Route definitions
-│   │   └── server.ts      # Entry point
-├── frontend/
-│   ├── src/
-│   │   ├── components/    # Reusable UI components
-│   │   ├── pages/         # Dashboard, Create Contract, Details
-│   │   ├── services/      # Axios API calls
-│   │   └── App.tsx        # Routing
-└── README.md
-
-
-
-
-
+   
