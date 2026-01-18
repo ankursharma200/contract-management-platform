@@ -7,18 +7,6 @@ A full-stack Contract Management Platform built with the MERN stack (MongoDB, Ex
 - **Frontend:** http://localhost:5173
 - **Backend:** http://localhost:5000
 
----
-
-## 🏗 Architecture Overview
-
-The application follows a **Monorepo** structure with a clear separation of concerns:
-
-
-graph TD
-    User[User / Client] -->|HTTPS| Frontend[Frontend (React + Vite)]
-    Frontend -->|REST API| Backend[Backend (Node.js + Express)]
-    Backend -->|Mongoose| DB[(MongoDB)]
-
 ## 🛠 Setup Instructions
 
 Prerequisites:
